@@ -2,7 +2,7 @@
 
 Nesta página web você será capaz de acessar todas as informações dos personagens do universo de Rick e Morty, podendo realizar filtragens por algumas caracteristicas e acessar por paginação.
 
-É possível acessar a aplicação pelo link \*\* \*\*
+É possível acessar a aplicação pelo link **https://rick-morty-characters-list.vercel.app/**
 
 ## Configurações
 
