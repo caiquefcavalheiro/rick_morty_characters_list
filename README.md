@@ -2,6 +2,8 @@
 
 Nesta página web você será capaz de acessar todas as informações dos personagens do universo de Rick e Morty, podendo realizar filtragens por algumas caracteristicas e acessar por paginação.
 
+É possível acessar a aplicação pelo link \*\* \*\*
+
 ## Configurações
 
 Para iniciar o projeto é precisando fazer o download e instalar as depêndencias pelo comando abaixo.

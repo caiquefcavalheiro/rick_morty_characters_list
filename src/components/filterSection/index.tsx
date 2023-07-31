@@ -2,6 +2,13 @@ import { useCallback, useEffect, useState } from "react";
 import { api } from "../../api/axios";
 import { Character } from "../../App";
 
+interface ParamsProps {
+  species: string;
+  type: string;
+  status: string;
+  name: string;
+}
+
 interface FilterSectionProps {
   setCharacters: (characters: Character[]) => void;
   setPrevPage: (page: string | null) => void;
@@ -18,8 +25,8 @@ export function FilterSection({
 
   const filterByParams = useCallback(async () => {
     if (searchInput) {
-      const params = {};
-      params[queryParams] = searchInput;
+      const params: ParamsProps = {} as ParamsProps;
+      params[queryParams as keyof ParamsProps] = searchInput;
       const characters = await api.get("/character", { params: params });
       setCharacters(characters.data.results);
       setPrevPage(characters.data.info.prev);
